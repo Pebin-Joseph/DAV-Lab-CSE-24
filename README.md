@@ -1,131 +1,147 @@
-# CS4503: Data Analytics and Visualization Lab Manual Solutions (Exp 1 to Exp 3-A)
+# DAV Lab CSE 24
 
-This repository contains fully structured, modular Python scripts, executed Jupyter Notebooks, and datasets for **Experiments 1 through 3-A** as specified in the CS4503 Data Analytics and Visualization Lab Manual.
+This repository contains a complete data analytics and visualization lab portfolio built around Python-based experiments, datasets, and saved outputs.
+
+The project includes all major experiments from the lab manual, organized into a cleaner structure for submission and portfolio use.
 
 ---
 
-## 📁 Repository Architecture & Layering
+## Project Overview
 
-The codebase is organized into modular layers to ensure maintainability, clear separation of concerns, and reproducible execution:
+This repository demonstrates work in:
+- data loading and preprocessing
+- NumPy and Pandas operations
+- descriptive statistics
+- regression and comparison analysis
+- hypothesis testing
+- ANOVA
+- logistic and linear model validation
+- time series analysis
+
+The code is organized for clarity and reuse, and the final outputs are saved separately in archive folders.
+
+---
+
+## Repository Structure
 
 ```text
-DAV Assignment/
-├── README.md                                  # Complete project documentation & Kaggle links
-├── requirements.txt                            # Python package dependencies
+DAV-Lab-CSE-24-main/
+├── README.md
+├── requirements.txt
+├── .gitignore
 ├── data/
-│   ├── raw/                                   # Downloaded/Generated raw datasets
-│   │   ├── iris.csv                           # Iris Flower Dataset
-│   │   ├── pima_diabetes.csv                  # Pima Indians Diabetes Dataset
-│   │   ├── uci_diabetes.csv                   # UCI Diabetes Dataset
-│   │   ├── Google_data.csv                    # Google Play Store Apps sample dataset
-│   │   └── data_sample.xlsx                   # Sample Excel workbook (.xlsx)
-│   └── processed/                             # Processed output files and plots
-│       ├── filtered_data.csv                  # Subset export from Exp 2B
-│       ├── processed_text.csv                 # Cleaned CSV export from Exp 2C
-│       ├── processed_excel.xlsx               # Cleaned Excel export from Exp 2C
-│       └── plots/                             # Saved visualizations from Exp 2D
-│           ├── iris_histograms.png
-│           ├── iris_sepal_length_boxplot.png
-│           └── iris_pairplot.png
+│   ├── raw/
+│   │   ├── Google_data.csv
+│   │   ├── iris.csv
+│   │   ├── pima_diabetes.csv
+│   │   ├── uci_diabetes.csv
+│   │   └── data_sample.xlsx
+│   └── processed/
+│       ├── processed_text.csv
+│       ├── processed_excel.xlsx
+│       ├── subset_data.csv
+│       └── plots/
 ├── src/
 │   ├── __init__.py
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── dataset_loader.py                  # Automated dataset downloader/generator
-│   │   └── notebook_generator.py             # Jupyter notebook builder
-│   └── experiments/
-│       ├── __init__.py
-│       ├── exp1_exploration.py               # Exp 1: Library Installation & Exploration
-│       ├── exp2a_numpy.py                    # Exp 2A: NumPy Array Manipulations
-│       ├── exp2b_pandas.py                   # Exp 2B: Pandas DataFrame Operations
-│       ├── exp2c_reading_data.py             # Exp 2C: Multi-Source Data Ingestion
-│       ├── exp2d_iris_descriptive.py         # Exp 2D: Iris Descriptive Analytics
-│       └── exp3a_univariate_diabetes.py      # Exp 3A: Univariate Statistical Analysis
-└── notebooks/
-    ├── Exp1_Installation_and_Exploration.ipynb
-    ├── Exp2A_NumPy_Arrays.ipynb
-    ├── Exp2B_Pandas_DataFrames.ipynb
-    ├── Exp2C_Reading_Data.ipynb
-    ├── Exp2D_Iris_Descriptive_Analytics.ipynb
-    └── Exp3A_Diabetes_Univariate_Analysis.ipynb
+│   ├── experiments/
+│   │   ├── exp1_exploration.py
+│   │   ├── exp2a_numpy.py
+│   │   ├── exp2b_pandas.py
+│   │   ├── exp2c_reading_data.py
+│   │   ├── exp2d_iris_descriptive.py
+│   │   ├── exp3a_univariate_diabetes.py
+│   │   ├── exp3b_bivariate_regression.py
+│   │   ├── exp3c_multiple_regression.py
+│   │   ├── exp3d_comparison.py
+│   │   ├── exp4a_normal_curves.py
+│   │   ├── exp4b_ztest.py
+│   │   ├── exp4c_ttest.py
+│   │   ├── exp4d_anova.py
+│   │   ├── exp5a_linear_model_validation.py
+│   │   ├── exp5b_logistic_model_validation.py
+│   │   ├── exp5c_time_series_analysis.py
+│   │   └── generate_lab_submission.py
+│   └── utils/
+│       ├── dataset_loader.py
+│       ├── notebook_generator.py
+│       └── __init__.py
+└── davlab_portfolio_josep/
+    ├── experiment_code_archive/
+    │   ├── Exp1_exp1_exploration.py
+    │   ├── Exp2A_exp2a_numpy.py
+    │   └── ...
+    └── experiment_output_archive/
+        ├── Exp1/
+        ├── Exp2A/
+        ├── Exp2B/
+        └── ...
 ```
 
 ---
 
-## 🔗 Dataset Information & Source Links
+## Main Folders
 
-All datasets are automatically fetched or initialized via `src/utils/dataset_loader.py`. You can also manually access/download them from their original Kaggle / UCI repositories:
+### src/
+Contains the working Python experiment scripts used for analysis and execution.
 
-1. **Iris Dataset**:
-   - **Kaggle Link**: [Iris Species Dataset on Kaggle](https://www.kaggle.com/datasets/uciml/iris)
-   - **UCI ML Repository**: [UCI Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris)
-2. **Pima Indians Diabetes Dataset**:
-   - **Kaggle Link**: [Pima Indians Diabetes Database on Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
-   - **UCI ML Repository**: [UCI Diabetes Dataset](https://archive.ics.uci.edu/ml/datasets/diabetes)
-3. **UCI Diabetes Dataset**:
-   - **Kaggle Link**: [Diabetes Dataset on Kaggle](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
+### data/
+Stores all raw and processed datasets including CSV, Excel, and generated plots.
+
+### davlab_portfolio_josep/experiment_code_archive/
+Contains a clean copy of each experiment file saved as a submission-ready archive.
+
+### davlab_portfolio_josep/experiment_output_archive/
+Contains output text files for each experiment, kept separate from the code archive.
 
 ---
 
-## 🚀 How to Run the Experiments
+## How to Run
 
-### 1. Install Dependencies
+Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Download / Initialize Datasets
+Run a specific experiment:
+
 ```bash
-python -m src.utils.dataset_loader
+python src/experiments/exp2a_numpy.py
+python src/experiments/exp2b_pandas.py
+python src/experiments/exp3a_univariate_diabetes.py
 ```
 
-### 3. Run Modular Python Experiments
-Execute any experiment script directly:
-```bash
-python -m src.experiments.exp1_exploration
-python -m src.experiments.exp2a_numpy
-python -m src.experiments.exp2b_pandas
-python -m src.experiments.exp2c_reading_data
-python -m src.experiments.exp2d_iris_descriptive
-python -m src.experiments.exp3a_univariate_diabetes
-```
+Or run the archive generator:
 
-### 4. Open Interactive Jupyter Notebooks
-Launch Jupyter Notebook to view pre-rendered interactive outputs:
 ```bash
-jupyter notebook notebooks/
+python src/experiments/generate_lab_submission.py
 ```
 
 ---
 
-## 📊 Summary of Implemented Experiments & Outputs
+## Experiments Included
 
-### **Experiment 1: Installation and Exploration**
-- **Objective**: Import and explore version information for core Data Science libraries: NumPy, SciPy, Jupyter/JupyterLab, Statsmodels, Pandas, Matplotlib, Seaborn, Plotly, Bokeh.
-- **Script**: `src/experiments/exp1_exploration.py`
-- **Notebook**: `notebooks/Exp1_Installation_and_Exploration.ipynb`
+- Exp1: Exploration and environment setup
+- Exp2A: NumPy operations
+- Exp2B: Pandas DataFrames
+- Exp2C: Reading data from multiple sources
+- Exp2D: Iris descriptive analysis
+- Exp3A: Univariate diabetes analysis
+- Exp3B: Bivariate regression
+- Exp3C: Multiple regression
+- Exp3D: Comparison analysis
+- Exp4A: Normal curves
+- Exp4B: Z-test
+- Exp4C: T-test
+- Exp4D: ANOVA
+- Exp5A: Linear model validation
+- Exp5B: Logistic model validation
+- Exp5C: Time series analysis
 
-### **Experiment 2A: Working with NumPy Arrays**
-- **Objective**: Implement 0D, 1D, 2D, and ones arrays; indexing, slicing, element-wise arithmetic, scalar operations, aggregations (sum, mean, std), boolean masking, fancy indexing, reshaping (1D to 2D), and structured arrays.
-- **Script**: `src/experiments/exp2a_numpy.py`
-- **Notebook**: `notebooks/Exp2A_NumPy_Arrays.ipynb`
+---
 
-### **Experiment 2B: Working with Pandas DataFrames**
-- **Objective**: Perform data inspection (`head`, `tail`, `info`, `describe`), missing value imputation (`fillna`), column transformations, Series operations, multi-condition filtering, `groupby` aggregation, sorting, boolean masking, duplicate removal, and exporting subset files (`filtered_data.csv`).
-- **Script**: `src/experiments/exp2b_pandas.py`
-- **Notebook**: `notebooks/Exp2B_Pandas_DataFrames.ipynb`
+## Notes
 
-### **Experiment 2C: Reading Data from Text Files, Excel, and Web**
-- **Objective**: Read CSV files, Excel workbooks (`.xlsx`), and web datasets (raw GitHub URLs). Handle missing values with forward-fill (`ffill`), backward-fill (`bfill`), and `dropna`. Save processed files to `processed_text.csv` and `processed_excel.xlsx`.
-- **Script**: `src/experiments/exp2c_reading_data.py`
-- **Notebook**: `notebooks/Exp2C_Reading_Data.ipynb`
+This repository was structured to keep code and outputs separated for a cleaner portfolio and assignment submission.
 
-### **Experiment 2D: Exploring Descriptive Analytics Using Iris Dataset**
-- **Objective**: Conduct descriptive analytics on the Iris dataset. Compute summary statistics and species value counts. Render feature distribution histograms, Sepal Length boxplots by species, and pairplots. Save plot images under `data/processed/plots/`.
-- **Script**: `src/experiments/exp2d_iris_descriptive.py`
-- **Notebook**: `notebooks/Exp2D_Iris_Descriptive_Analytics.ipynb`
-
-### **Experiment 3-A: Statistical Analysis Using Diabetes Datasets - Univariate Analysis**
-- **Objective**: Perform univariate statistical analysis on UCI Diabetes and Pima Indians Diabetes datasets across numerical features (`Glucose`, `BloodPressure`, `SkinThickness`, `Insulin`, `BMI`, `DiabetesPedigreeFunction`, `Age`). Compute **Mean**, **Median**, **Mode**, **Variance**, **Standard Deviation**, **Skewness**, and **Kurtosis**.
-- **Script**: `src/experiments/exp3a_univariate_diabetes.py`
-- **Notebook**: `notebooks/Exp3A_Diabetes_Univariate_Analysis.ipynb`
+The project is ready for GitHub publishing and version control.
