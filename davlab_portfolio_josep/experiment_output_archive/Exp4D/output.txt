@@ -1,7 +1,0 @@
-ANOVA Results:
-Glucose      F-statistic: 0.023444  P-value: 0.878465
-BloodPressure F-statistic: 0.107224 P-value: 0.743673
-BMI          F-statistic: 2.018658  P-value: 0.156949
-
-Interpretation:
-No statistically significant difference for these variables at alpha = 0.05.
