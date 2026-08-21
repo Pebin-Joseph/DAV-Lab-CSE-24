@@ -1,0 +1,13 @@
+Time Series Analysis completed on glucose values.
+
+Steps performed:
+- Time series plot
+- Seasonal decomposition (trend, seasonal, residual)
+- 7-day moving average smoothing
+- ARIMA forecasting
+
+Outputs include plots for:
+- Glucose time series
+- Decomposition components
+- Moving average with original series
+- Forecast vs actual

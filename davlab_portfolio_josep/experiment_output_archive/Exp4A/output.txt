@@ -1,0 +1,9 @@
+Normal curve visualization completed for UCI dataset.
+
+Attributes plotted:
+- Glucose
+- BMI
+
+Output includes:
+- Histogram with KDE and normal fit for Glucose
+- Histogram with KDE and normal fit for BMI

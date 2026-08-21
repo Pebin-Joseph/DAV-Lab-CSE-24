@@ -1,0 +1,6 @@
+Multiple Regression Results:
+UCI Diabetes Dataset - R2 Score: -0.0028
+Pima Indians Diabetes Dataset - R2 Score: -0.0904
+
+Target: BMI
+Features: Glucose, BloodPressure, Age

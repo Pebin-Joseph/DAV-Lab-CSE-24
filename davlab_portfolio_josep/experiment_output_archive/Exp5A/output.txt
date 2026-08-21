@@ -1,0 +1,15 @@
+Linear Regression Validation Results:
+
+UCI Diabetes Dataset:
+R2 Score: -0.0566
+MSE: 372.0488
+MAE: 16.2474
+
+Pima Indians Diabetes Dataset:
+R2 Score: 0.0066
+MSE: 243.8358
+MAE: 13.3069
+
+Plots generated:
+- Actual vs predicted (UCI)
+- Actual vs predicted (Pima)

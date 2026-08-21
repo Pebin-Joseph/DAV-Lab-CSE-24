@@ -1,0 +1,15 @@
+Text, Excel, and web data loaded successfully.
+
+Sample outputs shown for:
+- Google app dataset rows
+- Excel product dataset rows
+- Web countries dataset rows
+
+Processing done:
+- Forward fill on text data
+- Backward fill on excel data
+- Drop missing values on web data
+
+Saved files:
+- processed_text.csv
+- processed_excel.xlsx

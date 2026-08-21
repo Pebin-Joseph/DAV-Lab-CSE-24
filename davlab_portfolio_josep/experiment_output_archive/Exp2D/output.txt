@@ -1,0 +1,19 @@
+Basic Information:
+150 entries, 5 columns
+4 float columns and 1 object column
+
+Summary Statistics (mean):
+sepal length (cm): 5.843333
+sepal width (cm): 3.057333
+petal length (cm): 3.758000
+petal width (cm): 1.199333
+
+Species Count:
+setosa: 50
+versicolor: 50
+virginica: 50
+
+Plots generated:
+- Feature histograms
+- Sepal length boxplot
+- Pairplot by species

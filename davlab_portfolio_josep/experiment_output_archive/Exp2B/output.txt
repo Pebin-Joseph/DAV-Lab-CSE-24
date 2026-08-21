@@ -1,0 +1,20 @@
+First 5 rows displayed.
+Last 5 rows displayed.
+DataFrame info displayed with 10841 rows and 13 columns.
+Summary statistics displayed for Rating.
+
+Key statistics:
+count: 9367
+mean: 4.193338
+std: 0.537431
+min: 1.000000
+25%: 4.000000
+50%: 4.300000
+75%: 4.500000
+max: 19.000000
+
+Other operations completed:
+- Missing values handled
+- Filtering, grouping, sorting, masking
+- Duplicate removal and null drop
+- Subset saved to filtered_data.csv

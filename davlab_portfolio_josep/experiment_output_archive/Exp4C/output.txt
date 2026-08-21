@@ -1,0 +1,7 @@
+T-test Results:
+Glucose      T-statistic: 0.153113   P-value: 0.878467
+BloodPressure T-statistic: 0.327451  P-value: 0.743675
+BMI          T-statistic: -1.420795  P-value: 0.156973
+
+Interpretation:
+No statistically significant difference for these variables at alpha = 0.05.

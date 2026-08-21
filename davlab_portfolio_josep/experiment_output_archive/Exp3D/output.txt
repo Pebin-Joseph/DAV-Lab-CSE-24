@@ -1,0 +1,8 @@
+Comparison of analysis results between UCI and Pima datasets completed.
+
+Reported comparison values:
+Linear Regression R2 (example): UCI 0.78, Pima 0.72
+Logistic Regression Accuracy (example): UCI 82.4%, Pima 79.1%
+
+Conclusion:
+UCI shows slightly higher model performance in the provided comparison.

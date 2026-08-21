@@ -1,0 +1,11 @@
+Linear Regression (Predicting BMI using Glucose):
+UCI R2 Score: 0.0226
+Pima R2 Score: 0.0048
+
+Logistic Regression (Predicting Outcome using [Glucose, BloodPressure, BMI, Age]):
+UCI Accuracy: 0.2500
+Pima Accuracy: 0.4000
+
+Plots generated:
+- UCI linear regression scatter with fit line
+- Pima linear regression scatter with fit line
